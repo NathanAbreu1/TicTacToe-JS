@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  background-image: url(images/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#gameContainer {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+}
+
+#gameContainer h1 {
+  font-size: 100px;
+  color: #ffff;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 250px;
+  height: 200px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+h2#statusText {
+  color: #fff;
+  font-size: 25px;
+}
+
+.class {
+}
